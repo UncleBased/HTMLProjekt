@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <link rel="stylesheet" href="projekt.css">
+  
+<title>Devil May Cry</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color:rgb(255, 255, 255);
+    background-color:rgb(36, 36, 36)
+   
+   
+  }
+  #background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.header {
+  padding :80px;
+  text-align: center;
+  background: url("stuff.mp4")
+}
+
+  @media screen and (max-width: 100px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  }
+  
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 70px;
+}
+
+.topnav a:hover {
+  background-color: rgb(36, 36, 36);
+  color: black;
+}
+
+.topnav a.active {
+  
+  color: white;
+}
+.navbar a.right {
+  float: right;
+}
+.main {   
+  flex: 70%;
+  background-color: rgb(36, 36, 36);
+  padding: 20px;
+}
+p {
+  text-align: left;
+}
+#Leiras {
+  text-align: right;
+}
+.fakeimg {
+  margin-top: 50px;
+  margin-bottom: 300px;
+
+
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid rgb(7, 32, 116);
+  background-color: #044099;
+}
+
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+
+.tab button:hover {
+  background-color: rgb(54, 54, 54);
+}
+
+
+.tab button.active {
+  background-color: rgb(15, 193, 224);
+}
+
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid rgb(0, 0, 0);
+  border-top: none;
+}
+#myBtn {
+      display: none; 
+      position: fixed; 
+      bottom: 20px; 
+      right: 30px; 
+      z-index: 99; 
+      border: none; 
+      outline: none; 
+      background-color: rgb(0, 47, 255); 
+      color: white; 
+      cursor: pointer; 
+      padding: 15px; 
+      border-radius: 10px; 
+      font-size: 18px; 
+    }
+    
+    #myBtn:hover {
+      background-color: rgb(6, 176, 206); /* Add a dark-grey background on hover */
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="topnav">
+   
+    <a class="active" href="projekt.html"><img src="logo_dmc5.png" height="100" width="250"></a>
+    <a href="projekt2.html">A JÁTÉKRÓL</a>
+    <a href="projekt3.html">KARAKTEREK</a>
+    <a href="#about"></a>
+    <a href="https://www.devilmaycry5.com/us/" class="right"><img src="SSS.large.png" height="100" width="100"></a>
+    
+  </div>
+  <h2>KAREKTEREK:</h2>
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Nero')">Nero</button>
+      <button class="tablinks" onclick="openCity(event, 'Dante')">Dante</button>
+      <button class="tablinks" onclick="openCity(event, 'Vergil')">Vergil</button>
+    </div>
+    
+    <div id="Nero" class="tabcontent">
+      <h3>Nero</h3>
+      <h5><img src="Nero_DMC5.jpg" height="500" width="200"></h5>
+      <p>A fiatal Devil Hunter működő a mozgó Devil May Cryból.
+        Elvesztette a démoni karját (a Devil Bringer) a játék eseményei előtt,
+        egy új hatalommal áll a lerohanó démoni erők ellen.</p>
+        <video width="320" height="240" controls>
+          <source src="video3.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <div id="Dante" class="tabcontent">
+      <h3>Dante</h3>
+      <h5><img src="DanteDMC5.jpg" height="500" width="200"></h5>
+      <p>Devil May Cry tulajdonosa, és a legendás arányok egy Devil Huntere. Dante egy fél-ember, fél-démon hibrid, született egy emberi nőnek, Evának és a démonnak ki mentett meg az embernek világot, Sparda.
+        Fárasztó csata után győzött le csatát a múltjában, és jelenleg akadályként szolgál bármilyen démonok általi kísérletre hogy rohanja le a világát.</p>
+        <video width="320" height="240" controls>
+          <source src="video2.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <div id="Vergil" class="tabcontent">
+      <h3>Vergil</h3>
+      <h5><img src="Vergil_DMC5.jpg" height="500" width="200"></h5>
+      <p>Vergil Dante öregebb ikertestvére és a Devil May Cry kiváltság fő ellenfelei közül az egyik.
+        Sztoikus és tartózkodó, Vergil bemutat egy hajlandóságot, hogy tegyenek bármit a küldetésében, hogy szerezze az apjának, Spardának a hatalmát.
+
+      </p>
+      <video width="320" height="240" controls>
+        <source src="video1.mp4" type="video/mp4">
+      </video>
+    </div>
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
+        <script>
+        
+          let mybutton = document.getElementById("myBtn");
+          
+          window.onscroll = function() {scrollFunction()};
+          
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
+          
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+          </script>

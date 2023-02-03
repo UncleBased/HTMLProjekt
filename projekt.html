@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <link rel="stylesheet" href="projekt.css">
+  
+<title>Devil May Cry</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color:rgb(255, 255, 255);
+    background-color:rgb(36, 36, 36)
+   
+   
+  }
+  #background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.header {
+  padding :80px;
+  text-align: center;
+  background: url("stuff.mp4")
+}
+
+  @media screen and (max-width: 100px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  }
+  
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 70px;
+}
+
+.topnav a:hover {
+  background-color: rgb(36, 36, 36);
+  color: black;
+}
+
+.topnav a.active {
+  
+  color: white;
+}
+.navbar a.right {
+  float: right;
+}
+.main {   
+  flex: 70%;
+  background-color: rgb(36, 36, 36);
+  padding: 20px;
+}
+p {
+  text-align: left;
+}
+#Leiras {
+  text-align: right;
+}
+.fakeimg {
+  margin-top: 50px;
+  margin-bottom: 300px;
+
+
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid rgb(7, 32, 116);
+  background-color: #044099;
+}
+
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+
+.tab button:hover {
+  background-color: rgb(54, 54, 54);
+}
+
+
+.tab button.active {
+  background-color: rgb(15, 193, 224);
+}
+
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid rgb(0, 0, 0);
+  border-top: none;
+}
+#myBtn {
+      display: none; 
+      position: fixed; 
+      bottom: 20px; 
+      right: 30px; 
+      z-index: 99; 
+      border: none; 
+      outline: none; 
+      background-color: rgb(0, 47, 255); 
+      color: white; 
+      cursor: pointer; 
+      padding: 15px; 
+      border-radius: 10px; 
+      font-size: 18px; 
+    }
+    
+    #myBtn:hover {
+      background-color: rgb(6, 176, 206); /* Add a dark-grey background on hover */
+    }
+    video#watchMe {
+    z-index: 9999;
+    position:relative;
+}
+#overlay {
+    z-index: 9998;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    background: rgba(0, 0, 0, 0.85);
+}
+  </style>
+
+</head>
+
+
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+  <video id="watchMe" autoplay="true" muted height="100%" width="100%">
+    <source src="intro.mp4" type="video/mp4">
+</video>       
+
+<div id="overlay"></div>
+
+
+  <div class="topnav">
+   
+    <a class="active" href="projekt.html"><img src="logo_dmc5.png" height="100" width="250"></a>
+    <a href="projekt2.html">A JÁTÉKRÓL</a>
+    <a href="projekt3.html">KARAKTEREK</a>
+    <a href="#about"> </a>
+    <a href="https://www.devilmaycry5.com/us/" class="right"><img src="SSS.large.png" height="100" width="100"></a>
+    
+  </div>
+  <div class="header">
+    <video id="background-video" autoplay loop muted>
+      <source src="stuff.mp4" type="video/mp4">
+      </video>
+    <h1><img src="logo_dmc5_main.png" height="400" width="700" alt="Logo"></h1>
+  </div>
+  <div class="main">
+    <h2 class="about">ABOUT</h2>
+  
+    <h5>Legendary DMC action returns, made all the more stylish
+      by the power modern gaming has to offer.</h5>
+    <p>The Devil May Cry series boasts over 26 million sales worldwide.
+      The first game in this popular series to make its debut in the current generation,
+       bringing stylish mayhem against
+      fiendish foes at the hands of Devil Hunters with demon blood in their veins.</p>
+      <h2>STORY</h2>
+      <p>Several years after the Order of the Sword incident...
+          An unusual phenomenon suddenly appears in Red Grave City.
+          A gigantic tree pierces through the surface in the middle of town,
+          attacking with roots that drain the poor citizens of their blood.
+          
+          
+          Young Devil Hunter Nero races into Red Grave aboard the mobile
+          Devil May Cry vehicle with his partner Nico, a self-styled
+          "artisan of arms" who provides Nero with his new weapons.
+          
+          
+          Nero seeks to recover many things in Red Grave:
+          Lost pride...stolen power...and a man left behind.
+          
+          
+          Brandishing his beloved Red Queen sword and custom Blue Rose revolver,
+          Nero plunges into Red Grave, routing the demon hordes as he makes for the
+          menacing phenomenon in the city center.
+          
+          
+          All the while, a new power crackles through his right arm...
+          The all-new anti-demon arm known as the Devil Breaker.
+          "Not bad...let's see what this can do!</p>    
+      <h2>STYLISH ACTION</h2>
+        <p>  The fast-paced action you love,
+          the devilish combat you crave!
+          
+          Stylish action makes a triumphant return in the ramped-up sword-and-gun gameplay the DMC series is known for.
+          
+          Climb the Stylish Ranks!
+          Chain together stylish combos in battle to trigger a Stylish Rank on the right side of the screen, which rises as you
+          continue your artistic onslaught. Shooting for higher Stylish Ranks has all sorts of benefits, even pumping up the battle music at higher ranks.
+          Nothing beats the feeling of finishing off a battle at SSS Rank!
+          
+          
+          
+          
+          
+          Defeating foes with style nets
+          you more Red Orbs,
+          the mainstay DMC currency for
+          powering up your character.
+          Magical red stones of crystallized demon blood.
+          Exchange these for new weapons and skills.
+          
+          
+          
+          Make the demons' power your own Use Red Orbs to learn new skills.
+          You can even refill your Devil Breakers or stock up on items.</p>
+     
+      <br>
+    <h2>CHARACTERS:</h2>
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Nero')">Nero</button>
+      <button class="tablinks" onclick="openCity(event, 'Dante')">Dante</button>
+      <button class="tablinks" onclick="openCity(event, 'Vergil')">Vergil</button>
+    </div>
+    
+    <div id="Nero" class="tabcontent">
+      <h3>Nero</h3>
+      <h5><img src="Nero_DMC5.jpg" height="500" width="200"></h5>
+      <p>The young Devil Hunter operating out of the mobile Devil May Cry.
+        Having lost his demonic arm (the Devil Bringer) before the events of the game,
+        he stands against the invading demonic forces with a new power.</p>
+        <video width="320" height="240" controls>
+          <source src="video3.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <div id="Dante" class="tabcontent">
+      <h3>Dante</h3>
+      <h5><img src="DanteDMC5.jpg" height="500" width="200"></h5>
+      <p>The proprietor of Devil May Cry, and a Devil Hunter of legendary proportions. Dante is a half-human, half-demon hybrid, born to a human woman Eva and the demon who saved the human world, Sparda.
+        He overcame battle after arduous battle in his past, and currently serves as a barrier to any attempt by demons to invade his world.</p>
+        <video width="320" height="240" controls>
+          <source src="video2.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <div id="Vergil" class="tabcontent">
+      <h3>Vergil</h3>
+      <h5><img src="Vergil_DMC5.jpg" height="500" width="200"></h5>
+      <p>Vergil is the older twin brother of Dante and one of the main antagonists of the Devil May Cry franchise.
+        Stoic and reserved, Vergil displays a willingness to do anything in his quest to obtain the power of his father, Sparda.
+
+      </p>
+      <video width="320" height="240" controls>
+        <source src="video1.mp4" type="video/mp4">
+      </video>
+    </div>
+    
+ 
+    
+ 
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      </script>
+      <script>
+      
+        let mybutton = document.getElementById("myBtn");
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        var video = document.getElementById('watchMe');
+var overlay = document.getElementById('overlay');
+
+video.addEventListener('ended', function(){
+    overlay.style.display = 'none'; 
+}, false);
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
